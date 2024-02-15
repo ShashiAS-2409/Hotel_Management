@@ -1,0 +1,138 @@
+/* Reset some default styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color to the body */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    background-image: url("/assets/img/hotel-1831072.jpg");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header */
+h1 {
+    background-color: hsla(0, 0%, 10%, 0.1);
+    color: #fff;
+    font-size: 36px;
+    padding: 20px 0;
+}
+#dir{
+    width: 150px;
+    border: 1px solid#0099e5;
+    background-color: hsla(0, 0%, 10%, 0.1);
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size:20px;
+    margin: 20px 10px;
+    padding:20px 10px;
+}
+
+/* Style the form container */
+#form-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style form inputs */
+input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 50%; 
+    margin: 5px 0; 
+}
+
+select{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 53%; 
+    margin: 5px 0; 
+}
+
+/* Style the Submit button */
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: hsla(0, 0%, 10%, 0.1);
+    color: #fff;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+    display: block; 
+    margin: 10px auto; 
+}
+
+button:hover {
+    background-color: hsla(0, 0%, 10%, 0.1);
+    transform: scale(1.05);
+}
+
+/* Style the bookings table */
+#bookings-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Style table headers */
+#bookings-list th {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style individual table cells */
+#bookings-list td {
+    padding: 8px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+/* Style the Edit and Delete buttons within the table */
+#bookings-list button.edit {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50; /* Green color for Edit button */
+    color: #fff;
+    cursor: pointer;
+    margin: auto;
+}
+
+#bookings-list button.edit:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+#bookings-list button.delete {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f44336; /* Red color for Delete button */
+    color: #fff;
+    cursor: pointer;
+    margin: auto;
+}
+
+#bookings-list button.delete:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}

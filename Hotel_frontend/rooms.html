@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooms</title>
+    <style>
+        body {
+            margin: 0 0;
+            background-image: url("/assets/img/hotel-1831072.jpg");
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background-color: hsla(0, 0%, 10%, 0.1);
+            color: #fff;
+        }
+
+        .head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        h1 {
+            color: #fff;
+            padding: 10px 0;
+            text-align: left;
+            margin-left: 30px;
+        }
+
+        table {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        thead {
+            color: #fff;
+            background-color: #333;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        form {
+            padding: 20px;
+            max-width: 400px;
+            margin: 20px auto;
+            background-color: #fff;
+            border: 1px solid #ddd;
+        }
+
+        label {
+            font-size: smaller;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            margin-top: 5px;
+            width: 95%;
+            padding: 10px;
+            display: block;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+        }
+        select,
+        button {
+            margin-top: 5px;
+            width: 100%;
+            padding: 10px;
+            display: block;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            border: none;
+            color: #fff;
+            background-color: #333;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="head">
+            <h1>Room Management for Hotels</h1>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="displayRoomForm()">Add-Room</a></li>
+                    <li><a href="#" onclick="displayListRooms()">List-Rooms</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <form id="roomForm" style="display: block;">
+        <input id="roomId" hidden>
+        <label for="city_name">Select City:</label>
+        <select name="city_name" id="city_name">
+            <option hidden>Select City</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Bangalore">Bangalore</option>
+        </select>
+        <label for="location_name">Select Location:</label>
+        <select name="location_name" id="location_name">
+        </select>
+        <label for="hotel_name">Select Hotel:</label>
+        <select name="hotel_name" id="hotel_name">
+
+        </select>
+        <label for="room_type">Room-Type :</label>
+        <input type="text" placeholder="Room Type" name="room_type" id="room_type">
+        <label for="capacity">Number persons :</label>
+        <input type="number" placeholder="Capacity" name="capacity" id="capacity">
+        <label for="bed_type">Bed-type :</label>
+        <input type="text" placeholder="Bed Type" name="bed_configuration" id="bed_type">
+        <label for="price">Price :</label>
+        <input type="number" placeholder="Price" name="price" id="price">
+        <label for="discount">Discount :</label>
+        <input type="number" placeholder="Discount" name="discount" id="discount">
+        <button type="submit" id="submitButton">Add/Update Room</button>
+    </form>
+
+    <table id="roomTable">
+        <thead>
+            <tr>
+                <th>Hotel-Name</th>
+                <th>Room Type</th>
+                <th>Capacity</th>
+                <th>Bed-Type</th>
+                <th>Price</th>
+                <th>Discount</th>
+                <th>Functions</th>
+            </tr>
+        </thead>
+        <tbody id="roomData">
+
+        </tbody>
+    </table>
+    
+    <script src="rooms.js"></script>
+</body>
+
+</html>

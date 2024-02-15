@@ -1,0 +1,151 @@
+body {
+    margin:0 0;
+    font-family:'Times New Roman', Times, serif;
+    font-size:x-large;
+    background-image: url("/assets/img/hotel-1831072.jpg");
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+h1, h2 {
+    text-align: center;
+}
+header {
+    position: fixed;
+    margin-top: -870px;
+    background-color:hsla(0, 0%, 10%, 0.1);
+  
+    width: 100%;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    color: #fff;
+}
+#arr{
+    margin-left: 30px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+#create {
+    display: inline-block;
+    background-color: hsla(0, 0%, 10%, 0.1);
+    max-width: 90%;
+    margin: 120px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(249, 249, 249, 0.1);
+    backdrop-filter: blur(10px);
+}
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.form-actions {
+    display: flex;
+    max-width: 600px;
+    justify-content: space-between;
+}
+
+.form-actions button:first-child {
+    margin-left: 300px;
+    margin-right: 20px;
+}
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+#Price{
+    font-size: 0.6cm;
+    width: 200px;
+    height : 40px;
+    padding: 5px;
+    margin: 5px 0;
+    background-color: rgb(255, 255, 255);
+    text-size-adjust: 30px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+select{
+    font-size: 0.6cm;
+    width: 250px;
+    height : 53px;
+    padding: 5px;
+    margin: 5px 0;
+    text-size-adjust: 30px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+button {
+    margin: 0 25px;
+    display: block;
+    width: 70%;
+    padding: 15px; 
+    background-color: #3fe28e;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #03b157;
+    font-size:medium;
+    font-weight: bold;
+}
+table {
+    margin-left: 50px ;
+    width: 95%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th {
+    width: 280px;
+    height: 50px;
+    background-color: #d9e485;
+    font-weight: bold;
+    font-size: large;
+}
+
+td {
+    width: 260px;
+    padding: 5px;
+    text-align: center;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+tr:nth-child(odd) {
+    background: #d8f8e6;
+}
